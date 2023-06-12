@@ -3,12 +3,17 @@ import os
 import re
 import requests
 import sys
-import time
+import time 
 
-from data_collection.test_repos import get_issue_count, get_jira_base_url
-from utilities.constants import CSV_FILE_EXTENSION, DATA_FOLDER, FIELD_KEYS, ID_FIELD_KEY, LABELED_DATA_JQL
-from utilities.constants import LABELED_FILENAME, PROJECT_FIELD_KEY, RAW_POSTFIX, UNLABELED_FILENAME, UNLABELED_DATA_JQL
-from utilities.file_utils import create_subfolder, get_repository_search_url, get_repository_filename
+sys.path.append('/home/jakob/Desktop/Jira_Oracle/utilities')
+
+import constants 
+import file_utils 
+
+from test_repos import get_issue_count, get_jira_base_url
+from constants import CSV_FILE_EXTENSION, DATA_FOLDER, FIELD_KEYS, ID_FIELD_KEY, LABELED_DATA_JQL
+from constants import LABELED_FILENAME, PROJECT_FIELD_KEY, RAW_POSTFIX, UNLABELED_FILENAME, UNLABELED_DATA_JQL
+from file_utils import create_subfolder, get_repository_search_url, get_repository_filename
 
 MAX_RECORDS_PER_REQUEST = 50
 

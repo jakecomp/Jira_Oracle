@@ -1,10 +1,14 @@
 import json
 import re
 import requests
-import sys
+import sys 
 
-from utilities.constants import get_repository_search_url
-from utilities.constants import LABELED_DATA_JQL, POTENTIAL_REPOS_FILENAME, REQUEST_TIMEOUT_SECONDS, TIMESPENT_FIELD_KEY 
+sys.path.append('/home/jakob/Desktop/Jira_Oracle/utilities')  
+
+import constants
+
+from constants import get_repository_search_url
+from constants import LABELED_DATA_JQL, POTENTIAL_REPOS_FILENAME, REQUEST_TIMEOUT_SECONDS, TIMESPENT_FIELD_KEY 
 
 
 def get_issue_count(repository_search_url, auth=None, jql=""):

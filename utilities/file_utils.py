@@ -6,12 +6,14 @@ import platform
 import shutil
 import sys
 
-from utilities.constants import *
+from constants import *
 
 MAX_BYTES = 2 ** 31 - 1
 
-def load_json(filename):
+def load_json(filename): 
 
+    
+    
     if not os.path.isfile(filename):
         print("File %s does not exist" % filename)
         return
