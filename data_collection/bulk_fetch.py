@@ -1,7 +1,7 @@
 import os 
 import sys 
 
-sys.path.append('/home/jakob/Desktop/Jira_Oracle/utilities')
+sys.path.append('C:/Users/jake1/OneDrive/Desktop/Jira_Oracle/utilities')
 
 
 import file_utils 
@@ -35,5 +35,5 @@ def fetch_repositories(repositories):
 
 if __name__ == "__main__":
 
-    repositories = load_json('/home/jakob/Desktop/Jira_Oracle/'+REPOSITORY_LIST_FILENAME)
+    repositories = load_json('C:/Users/jake1/OneDrive/Desktop/Jira_Oracle/'+REPOSITORY_LIST_FILENAME)
     fetch_repositories(repositories)
